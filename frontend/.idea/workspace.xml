@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9941c4a6-fbde-4bc4-9124-ba9f86d6e8a1" name="Default Changelist" comment="" />
+    <list default="true" id="9941c4a6-fbde-4bc4-9124-ba9f86d6e8a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../backend/src/controllers/gamesController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/controllers/indexController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/database.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/keys.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/build/routes/gamesRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/build/routes/gamesRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/build/routes/indexRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/build/routes/indexRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/routes/gamesRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/routes/gamesRoutes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/routes/indexRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/routes/indexRoutes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../database/database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/user-contact/user-contact.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="225">
+              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -62,7 +75,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -101,11 +114,12 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="819" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -210,7 +224,7 @@
       <updated>1557399963241</updated>
       <workItem from="1557399965447" duration="25490000" />
       <workItem from="1557543612986" duration="166000" />
-      <workItem from="1557544305355" duration="5493000" />
+      <workItem from="1557544305355" duration="6098000" />
     </task>
     <task id="LOCAL-00001" summary="frontend">
       <created>1557678682561</created>
@@ -230,7 +244,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31149000" />
+    <option name="totallyTimeSpent" value="31754000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -242,16 +256,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="819" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="819" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49891067" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49891067" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="3" sideWeight="0.50108933" side_tool="true" weight="0.24947146" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3066104" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3066104" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5003524" side_tool="true" weight="0.35443038" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32911393" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="3" visible="true" weight="0.32911393" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="TypeScript" order="5" weight="0.32911393" />
       <window_info anchor="bottom" id="Find" order="6" />
@@ -267,6 +281,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_DETAILS" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="frontend" />
@@ -501,8 +518,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/user-contact/user-contact.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="225">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
