@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9941c4a6-fbde-4bc4-9124-ba9f86d6e8a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../backend/src/controllers/gamesController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/controllers/indexController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/database.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/src/keys.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/build/routes/gamesRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/build/routes/gamesRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/build/routes/indexRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/build/routes/indexRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/routes/gamesRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/routes/gamesRoutes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/routes/indexRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/routes/indexRoutes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../database/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../database/database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/keys.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/keys.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -257,6 +246,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="819" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
