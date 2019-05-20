@@ -1,6 +1,6 @@
-
 .idea/
 frontend/.idea/
+frontend/.editorconfig/
 backend/.idea/
 backend/build/
 frontend/.idea/node_modules
