@@ -1,4 +1,7 @@
 
-.idea/workspace.xml
-frontend/.idea/workspace.xml
-frontend/.idea/vcs.xml
+.idea/
+frontend/.idea/
+backend/.idea/
+backend/build/
+frontend/.idea/node_modules
+frontend/node_modules/
