@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <table class="table table-striped">
+
+      <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Guthaben (€)</th>
+        <th scope="col">Bestellungen</th>
+        <th scope="col">Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let customer of customers" >
+        <th scope="row">{{customer.id}}</th>
+        <td>{{customer.last_name | uppercase}}</td>
+        <td>{{customer.email| lowercase }}</td>
+        <td>{{customer.credit}}</td>
+        <td>TODO</td>
+        <td>
+          <button type="button" class="btn btn-primary mr-2">Bestellungen</button>
+          <button type="button" class="btn btn-secondary">Profil</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

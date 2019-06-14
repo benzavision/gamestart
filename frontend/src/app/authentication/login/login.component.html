@@ -1,15 +1,14 @@
 <body class="text-center section-main">
-<form class="form-signin">
+<form (submit)="login()" class="form-signin">
   <h2 routerLink="/home">{{ title }}</h2>
   <h1 class="h3 mt-5 mb-3 font-weight-normal">Login</h1>
-  <label for="inputEmail" class="sr-only">Email address</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
-  <label for="inputPassword" class="sr-only">Passwort</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Passwort" required>
+  <label for="email" class="sr-only">Email address</label>
+  <input type="email" name="email"  class="form-control" placeholder="Email" [(ngModel)]="credentials.email" required autofocus>
+  <label for="password" class="sr-only">Passwort</label>
+  <input type="password" name="password" class="form-control" placeholder="Passwort" [(ngModel)]="credentials.password" required>
 
   <button class="btn btn-lg btn-primary btn-block mt-3 mb-3" type="submit">Login</button>
   <a routerLink="/register" class="">Registrieren</a>
-
 
   <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
 </form>

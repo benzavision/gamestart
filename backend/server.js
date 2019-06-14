@@ -1,6 +1,9 @@
 var express = require ('express');
-var app = express();
+// var session = require('express-session');
 var bodyparser = require ('body-parser');
+//const router = express.Router();
+var app = express();
+
 
 
 app.use(function (req,res,next) {
@@ -20,3 +23,6 @@ var server = app.listen(5000,function () {
     console.log('listenimg on port ', server.address().port);
     
 });
+
+
+

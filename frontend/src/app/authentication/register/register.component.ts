@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { CustomersService } from 'src/app/services/customers.service';
+import { AuthenticationService, TokenPayload } from "../authentication.service";
+import { Customer} from '../../models/Customer';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -7,11 +11,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,private auth: AuthenticationService) { }
   title = 'GameStart';
-  images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
 
-  ngOnInit() {
+  credentials: TokenPayload = {
+    id: 0,
+    name: "",
+    last_name: "",
+    email: "",
+    avatar: "",
+    password: "",
+    credit: 0
+  };
+
+  ngOnInit() {}
+
+  register() {
+
   }
 
 }

@@ -12,6 +12,7 @@ import { Game } from 'src/app/models/Game';
 })
 export class GameListComponent implements OnInit {
 
+
   @HostBinding('class') classes = 'row';
 
   games: any = [];
@@ -20,7 +21,6 @@ export class GameListComponent implements OnInit {
 
   ngOnInit() {
     this.getGames();
-
   }
 
   getGames() {
@@ -33,16 +33,7 @@ export class GameListComponent implements OnInit {
       );
   }
 
-  deleteGame(id: string) {
-    this.gameService.deleteGame(id)
-      .subscribe(
-        res => {
-          console.log(res);
-          this.getGames();
-        },
-        err => console.error(err)
-      );
-  }
+
 
   public popoverTitle: string = 'Popover title';
   public popoverMessage: string = 'Popover description';

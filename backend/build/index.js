@@ -8,6 +8,7 @@ var morgan_1 = __importDefault(require("morgan"));
 var cors_1 = __importDefault(require("cors"));
 var indexRoutes_1 = __importDefault(require("./routes/indexRoutes"));
 var gamesRoutes_1 = __importDefault(require("./routes/gamesRoutes"));
+var customersRoutes_1 = __importDefault(require("./routes/customersRoutes"));
 var Server = /** @class */ (function () {
     function Server() {
         this.app = express_1.default();
@@ -24,6 +25,7 @@ var Server = /** @class */ (function () {
     Server.prototype.routes = function () {
         this.app.use('/', indexRoutes_1.default);
         this.app.use('/api/games', gamesRoutes_1.default);
+        this.app.use('/api/customers', customersRoutes_1.default);
     };
     Server.prototype.start = function () {
         var _this = this;
