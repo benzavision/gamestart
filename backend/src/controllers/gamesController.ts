@@ -4,6 +4,7 @@ import pool from '../database';
 
 
 
+
 class GamesController {
 
     public async list(req: Request, res: Response): Promise<void> {
@@ -17,8 +18,10 @@ class GamesController {
         console.log(games.length);
         if (games.length > 0) {
             return res.json(games[0]);
+        } else {
+            res.status(404).json({ text: "The games doesn't exits" });
+
         }
-        res.status(404).json({ text: "The games doesn't exits" });
     }
 
     public async create(req: Request, res: Response): Promise<void> {

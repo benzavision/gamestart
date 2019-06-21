@@ -8,5 +8,6 @@ import {AuthenticationService} from './authentication/authentication.service';
 })
 export class AppComponent {
   constructor(public auth: AuthenticationService){}
+
   title = 'GameStart';
 }

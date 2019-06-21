@@ -7,7 +7,9 @@ import { RegisterComponent} from './authentication/register/register.component';
 import { UserContactComponent} from "./user-contact/user-contact.component";
 import { ManagerHomeComponent} from './manager-home/manager-home.component';
 import { ManagerCustomerComponent} from './manager-customer/manager-customer.component';
-import { ManagerCustomerListComponent} from './manager-customer-list/manager-customer-list.component';
+import { ManagerGamesComponent } from './manager-games/manager-games.component';
+import { ManagerAddGameComponent} from './manager-add-game/manager-add-game.component';
+
 
 const routes: Routes = [
   { path:'', redirectTo: 'home', pathMatch:'full'},
@@ -24,6 +26,12 @@ const routes: Routes = [
   {path: 'dashboard', component:ManagerHomeComponent},
   { path:'', redirectTo: 'customers', pathMatch:'full'},
   {path: 'customers', component:ManagerCustomerComponent},
+  { path:'', redirectTo: 'games', pathMatch:'full'},
+  {path: 'games', component:ManagerGamesComponent},
+  { path:'', redirectTo: 'new-game', pathMatch:'full'},
+  {path: 'games/add', component:ManagerAddGameComponent},
+  { path:'', redirectTo: 'games/edit/:id', pathMatch:'full'},
+  {path: 'games/edit/:id', component:ManagerAddGameComponent},
 
 ];
 

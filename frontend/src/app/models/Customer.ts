@@ -7,6 +7,7 @@ export interface Customer {
   last_name?: string,
   email?: string,
   credit?: number,
-  password?: string
+  password?: string,
+  token?: string
 
 };

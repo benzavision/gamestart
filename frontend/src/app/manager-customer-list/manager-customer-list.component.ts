@@ -1,6 +1,6 @@
 import {Component, OnInit,HostBinding} from '@angular/core';
 
-import {CustomersService} from '../services/customers.service';
+import { CustomersService} from '../services/customers.service';
 import { Customer} from '../models/Customer';
 
 

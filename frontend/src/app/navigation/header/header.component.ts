@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ConsolesService} from '../../services/consoles.service';
+import {Console} from '../../models/Console';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private consolesService : ConsolesService,) { }
   title = 'GameStart';
+  consoles: any = [];
 
   ngOnInit() {
+    this.getConsoles();
+  }
+
+  getConsoles() {
+    this.consolesService.getConsoles()
+      .subscribe(
+        res => {
+          this.consoles = res;
+        },
+        err => console.error(err)
+      );
   }
 
 }

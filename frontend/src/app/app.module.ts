@@ -6,13 +6,13 @@ import { RouterModule, Routes} from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { ConfirmationPopoverModule} from 'angular-confirmation-popover';
 import { AngularFontAwesomeModule} from 'angular-font-awesome';
+import { ReactiveFormsModule }    from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent} from './navigation/header/header.component';
 import { MainComponent } from './main/main.component';
 import { CategoriesComponent } from './main/categories/categories.component';
 import { SliderComponent } from './main/slider/slider.component';
-import { GroupsComponent } from './main/groups/groups.component';
 import { FooterComponent } from './navigation/footer/footer.component';
 import { UserShoppingCartComponent } from './user-shopping-cart/user-shopping-cart.component';
 import { UserHomeComponent } from './user-home/user-home.component';
@@ -22,7 +22,7 @@ import { UserContactComponent } from './user-contact/user-contact.component';
 import { HttpClientModule} from '@angular/common/http';
 import { GameListComponent } from './game-list/game-list.component';
 import { ManagerHomeComponent } from './manager-home/manager-home.component';
-import { MangerGamesComponent } from './manger-games/manger-games.component';
+import { ManagerGamesComponent } from './manager-games/manager-games.component';
 import { ManagerHeaderComponent } from './navigation/manager-header/manager-header.component';
 import { ManagerAddGameComponent } from './manager-add-game/manager-add-game.component';
 import { ManagerCustomerComponent } from './manager-customer/manager-customer.component';
@@ -33,6 +33,7 @@ import { AuthenticationService} from './authentication/authentication.service';
 import { AuthGuardService} from './authentication/auth-guard.service';
 import { ManagerTopMenuComponent } from './manager-top-menu/manager-top-menu.component';
 import { ManagerCustomerListComponent } from './manager-customer-list/manager-customer-list.component';
+import { AlertComponent } from './authentication/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,6 @@ import { ManagerCustomerListComponent } from './manager-customer-list/manager-cu
     MainComponent,
     CategoriesComponent,
     SliderComponent,
-    GroupsComponent,
     FooterComponent,
     UserShoppingCartComponent,
     UserHomeComponent,
@@ -50,12 +50,13 @@ import { ManagerCustomerListComponent } from './manager-customer-list/manager-cu
     UserContactComponent,
     GameListComponent,
     ManagerHomeComponent,
-    MangerGamesComponent,
+    ManagerGamesComponent,
     ManagerHeaderComponent,
     ManagerAddGameComponent,
     ManagerTopMenuComponent,
     ManagerCustomerComponent,
-    ManagerCustomerListComponent
+    ManagerCustomerListComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +66,8 @@ import { ManagerCustomerListComponent } from './manager-customer-list/manager-cu
     NgbModule,
     AngularFontAwesomeModule,
     ConfirmationPopoverModule.forRoot({confirmButtonType: 'primary'}),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     GamesService,

@@ -70,7 +70,9 @@ var GamesController = /** @class */ (function () {
                         if (games.length > 0) {
                             return [2 /*return*/, res.json(games[0])];
                         }
-                        res.status(404).json({ text: "The games doesn't exits" });
+                        else {
+                            res.status(404).json({ text: "The games doesn't exits" });
+                        }
                         return [2 /*return*/];
                 }
             });

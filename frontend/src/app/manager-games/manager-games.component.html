@@ -1,0 +1,57 @@
+<app-manager-header></app-manager-header>
+<section class="section-main bg padding-top-sm">
+  <app-manager-top-menu></app-manager-top-menu>
+</section>
+
+<section class="section-content padding-y bg">
+  <div class="container">
+    <div class=" row m-0">
+      <h2 class="mr-auto">Spiele ({{games.length}}) </h2>
+      <button routerLink="/games/add" routerLinkActive="active"  type="button" class="btn btn-outline-primary ml-2 "><i class="fa fa-plus"></i> Hinzufügen</button>
+    </div>
+
+    <div class="card mt-3">
+      <table class="table table-striped">
+
+        <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Konsole</th>
+          <th scope="col">Alter Preis</th>
+          <th scope="col">Neuer Preis</th>
+          <th scope="col">Bestand</th>
+          <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let game of games" >
+          <th scope="row">{{game.id}}</th>
+          <td>{{game.title | uppercase}}</td>
+          <td>{{game.console | uppercase }}</td>
+          <td>{{game.old_price}}</td>
+          <td>{{game.price}}</td>
+          <td>{{game.stock}}</td>
+          <td>
+            <button [routerLink]="['/games/edit', game.id]" type="button" class="btn btn-primary mr-2"><i class="fa fa-pencil"></i></button>
+            <button
+              mwlConfirmationPopover
+              [popoverTitle]="popoverTitle"
+              [popoverMessage]="popoverMessage"
+              placement="top"
+              (confirm)="deleteGame(game.id)"
+              (cancel)="cancelClicked = true"
+              type="button" class="btn btn-danger"><i class="fa fa-trash"></i>
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</section>
+<app-footer></app-footer>
+
+
+

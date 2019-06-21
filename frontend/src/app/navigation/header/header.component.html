@@ -14,9 +14,8 @@
             <div class="input-group w-100">
               <input type="text" class="form-control" style="width:55%;" placeholder="Suchen...">
               <select class="custom-select"  name="category_name">
-                <option value="codex">PS4</option>
-                <option value="comments">XBOX</option>
-                <option value="comments">SWITCH</option>
+                <option value="codex">Konsole...</option>
+                <option *ngFor="let console of consoles" >{{console.name | uppercase}}</option>
               </select>
               <div class="input-group-append">
                 <button class="btn btn-primary" type="submit">
