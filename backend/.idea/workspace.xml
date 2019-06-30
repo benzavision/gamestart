@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fdd8a52-7594-4e9a-a94d-e0fcf35a8eb3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/controllers/customersController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/customersController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/keys.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/keys.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keys.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/keys.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/authentication/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/authentication/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/profile/profile.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/keys.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -58,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -136,6 +134,7 @@
         <option value="$PROJECT_DIR$/src/controllers/adminsController.ts" />
         <option value="$PROJECT_DIR$/src/controllers/gamesController.ts" />
         <option value="$PROJECT_DIR$/src/controllers/customersController.ts" />
+        <option value="$PROJECT_DIR$/src/keys.ts" />
       </list>
     </option>
   </component>
@@ -160,18 +159,6 @@
               <item name="backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -234,12 +221,12 @@
       <workItem from="1561541525869" duration="145000" />
       <workItem from="1561541892175" duration="6556000" />
       <workItem from="1561629894161" duration="2114000" />
-      <workItem from="1561709167622" duration="6359000" />
+      <workItem from="1561709167622" duration="6596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59353000" />
+    <option name="totallyTimeSpent" value="59590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -488,13 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/keys.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -533,6 +513,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/keys.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>

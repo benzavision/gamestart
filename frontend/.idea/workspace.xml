@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9941c4a6-fbde-4bc4-9124-ba9f86d6e8a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/src/controllers/customersController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/controllers/customersController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/build/keys.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/build/keys.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/src/keys.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/src/keys.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -239,13 +240,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -343,7 +337,7 @@
       <workItem from="1561541526981" duration="144000" />
       <workItem from="1561541892360" duration="14930000" />
       <workItem from="1561629909075" duration="3003000" />
-      <workItem from="1561709174514" duration="26902000" />
+      <workItem from="1561709174514" duration="27139000" />
     </task>
     <task id="LOCAL-00001" summary="frontend">
       <created>1557678682561</created>
@@ -363,7 +357,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155620000" />
+    <option name="totallyTimeSpent" value="155857000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
