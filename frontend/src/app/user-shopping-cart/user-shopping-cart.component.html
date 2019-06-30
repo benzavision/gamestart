@@ -17,45 +17,33 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
+            <p *ngIf="items.length <1" class="m-3">Warenkorb leer !</p>
+            <tr *ngFor="let item of items  ">
               <td>
                 <figure class="media">
-                  <div class="img-wrap"><img src="assets/images/items/1.jpg" class="img-thumbnail img-sm"></div>
                   <figcaption class="media-body">
-                    <h6 class="title text-truncate">Fifa 19</h6>
+                    <h6 class="title ">{{item.gametitle}}</h6>
                     <dl class="dlist-inline small">
-                      <dt>Konsole: </dt>
-                      <dd>PS4</dd>
-                    </dl>
-                    <dl class="dlist-inline small">
-                      <dt>Entwickler: </dt>
-                      <dd>EA Sports</dd>
-                    </dl>
-                    <dl class="dlist-inline small">
-                      <dt>Datum: </dt>
-                      <dd>10.09.2018</dd>
+                      <dt>ID: </dt>
+                      <dd>{{ item.gameid }}</dd>
                     </dl>
                   </figcaption>
                 </figure>
               </td>
               <td>
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
+                {{ item.quantity  }}
               </td>
               <td>
                 <div class="price-wrap">
-                  <var class="price">145 €</var>
-                  <small class="text-muted">(5 each)</small>
+                  <var class="price">{{ item.price * item.quantity }} €</var>
+                  <small class="text-muted">({{ item.price  }} each)</small>
                 </div> <!-- price-wrap .// -->
               </td>
               <td class="text-right">
-                <a href="" class="btn btn-outline-danger"> × Entfernen</a>
+                <a (click)="removeGame(item.id)" class="btn btn-outline-danger"> × Entfernen</a>
               </td>
             </tr>
+            <button (click)="clearCart()" [disabled]="items.length<1" class="btn btn-danger m-3">Warenkorb leeren</button>
 
             </tbody>
           </table>
@@ -63,35 +51,17 @@
 
       </main> <!-- col.// -->
       <aside class="col-sm-3">
-        <div class="alert alert-success">
-          <p>Guthaben : 500€</p>
+        <div class="alert alert-primary">
+          <p>Guthaben : {{ loggedinCustomer.credit  }} €</p>
           <button class="btn btn-light">Konto aufladen</button>
         </div>
-        <dl class="dlist-align">
-          <dt>Total price: </dt>
-          <dd class="text-right">USD 568</dd>
-        </dl>
-        <dl class="dlist-align">
-          <dt>Discount:</dt>
-          <dd class="text-right">USD 658</dd>
-        </dl>
         <dl class="dlist-align h4">
           <dt>Total:</dt>
-          <dd class="text-right"><strong>USD 1,650</strong></dd>
+          <dd class="text-right"><strong>{{ total  }} €</strong></dd>
         </dl>
+        <button [disabled]="loggedinCustomer.credit > total || loggedinCustomer.credit == 0 " class="btn btn-primary btn-block">Kaufen</button>
         <hr>
-        <figure class="itemside mb-3">
-          <aside class="aside"><img src="assets/images/icons/pay-visa.png"></aside>
-          <div class="text-wrap small text-muted">
-            Visa Card
-          </div>
-        </figure>
-        <figure class="itemside mb-3">
-          <aside class="aside"> <img src="assets/images/icons/pay-mastercard.png"> </aside>
-          <div class="text-wrap small text-muted">
-            MasterCard
-          </div>
-        </figure>
+
 
       </aside> <!-- col.// -->
     </div>

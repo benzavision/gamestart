@@ -10,14 +10,49 @@ export class CustomersService {
 
   API_URI = 'http://localhost:3000/api';
 
-  constructor(private http: HttpClient) { }
+  public loggedinCustomer: Customer ={
+    name : ''
+};
+  public loggedinId: 0;
+
+
+  constructor(private http: HttpClient) {
+
+  }
+
+
+  saveLogin( c: Customer){
+    if(c.id){
+      localStorage.setItem('loginUser', c.id.toString());
+    } else {
+      this.logout();
+    }
+  }
+
+  getLogin(){
+    return this.getCustomerById(localStorage.getItem('loginUser')) ;
+  }
+
+  getLoginId(){
+    return localStorage.getItem('loginUser') ;
+  }
+
+  logout(){
+    localStorage.removeItem('loginUser');
+    localStorage.removeItem('cart');
+  }
 
   getCustomers() {
     return this.http.get(`${this.API_URI}/customers`);
   }
 
-  getCustomer(id: string) {
-    return this.http.get(`${this.API_URI}/customers/${id}`);
+  getCustomerById(id: string) {
+    return this.http.get(`${this.API_URI}/customers/get/${id}`);
+  }
+
+  login(email: string, password: string) {
+
+    return this.http.get(`${this.API_URI}/customers/auth/${email}/${password}`);
   }
 
   deleteCustomer(id: string) {

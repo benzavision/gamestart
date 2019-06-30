@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+import {AdminService} from '../services/admin.service';
 
 @Component({
   selector: 'app-manager-home',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagerHomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private adminService : AdminService, private router: Router, ) { }
 
   ngOnInit() {
+    this.checkLogin();
+
+  }
+
+  checkLogin(){
+    if (!this.adminService.getLoginId()) {
+      this.router.navigate(['/auth/admin-login'], );
+    }
+
   }
 
 }

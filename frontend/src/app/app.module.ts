@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { ConfirmationPopoverModule} from 'angular-confirmation-popover';
 import { AngularFontAwesomeModule} from 'angular-font-awesome';
 import { ReactiveFormsModule }    from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent} from './navigation/header/header.component';
 import { MainComponent } from './main/main.component';
@@ -29,11 +28,12 @@ import { ManagerCustomerComponent } from './manager-customer/manager-customer.co
 
 import { GamesService } from './services/games.service';
 import { CustomersService} from './services/customers.service';
-import { AuthenticationService} from './authentication/authentication.service';
-import { AuthGuardService} from './authentication/auth-guard.service';
 import { ManagerTopMenuComponent } from './manager-top-menu/manager-top-menu.component';
 import { ManagerCustomerListComponent } from './manager-customer-list/manager-customer-list.component';
-import { AlertComponent } from './authentication/alert/alert.component';
+import { CategorieListComponent } from './categorie-list/categorie-list.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SearchListComponent } from './search-list/search-list.component';
+import { AdminLoginComponent } from './authentication/admin-login/admin-login.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +56,10 @@ import { AlertComponent } from './authentication/alert/alert.component';
     ManagerTopMenuComponent,
     ManagerCustomerComponent,
     ManagerCustomerListComponent,
-    AlertComponent
+    CategorieListComponent,
+    ProfileComponent,
+    SearchListComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
@@ -71,9 +74,7 @@ import { AlertComponent } from './authentication/alert/alert.component';
   ],
   providers: [
     GamesService,
-    CustomersService,
-    AuthenticationService,
-    AuthGuardService
+    CustomersService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,19 @@
+<body class="text-center">
+<div class="form-signin">
+  <h2 routerLink="/dashboard">{{ title }}</h2>
+  <h1 class="h3 mt-5 mb-3 font-weight-normal">Mitarbeiter Login</h1>
+
+  <label class="sr-only">Email addresse</label>
+  <input type="email" name="email" class="form-control" placeholder="Email addresse" required autofocus [(ngModel)]="admin.email">
+  <label class="sr-only">Password</label>
+  <input type="password" name="password" class="form-control" placeholder="Password" required [(ngModel)]="admin.password">
+
+  <button class="btn btn-lg btn-primary btn-block mt-3 mb-3" type="submit"
+          (click)="login()">Login
+  </button>
+
+  <div class="alert-box">{{ msg }}</div>
+
+  <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
+</div>
+</body>

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {ConsolesService} from '../../services/consoles.service';
 import {Console} from '../../models/Console';
+import {Customer} from '../../models/Customer';
+import {CustomersService} from '../../services/customers.service';
+import {el} from '@angular/platform-browser/testing/src/browser_util';
+import {ShoppingService} from '../../services/shopping.service';
 
 @Component({
   selector: 'app-header',
@@ -9,22 +12,51 @@ import {Console} from '../../models/Console';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private consolesService : ConsolesService,) { }
-  title = 'GameStart';
-  consoles: any = [];
+  constructor(
+    private shoppingService: ShoppingService,
+    private customersService: CustomersService, ) { }
 
-  ngOnInit() {
-    this.getConsoles();
+  title = 'GameStart';
+  word: string;
+  login: boolean;
+
+  loggedinCustomer: Customer = {
+    name : 'Login'};
+
+  cartQuantity: number;
+
+ngOnInit() {
+    this.getLoggedin();
+  this.shoppingService.loadCart();
+  this.cartQuantity = this.shoppingService.items.length ;
   }
 
-  getConsoles() {
-    this.consolesService.getConsoles()
+
+  logout(){
+  this.customersService.logout();
+  window.location.reload();
+  this.login = false;
+  }
+
+  getLoggedin(){
+  if (localStorage.getItem('loginUser')){
+    this.login = true;
+
+    console.log(this.customersService.getLoginId() );
+
+
+    this.customersService.getLogin()
       .subscribe(
         res => {
-          this.consoles = res;
+          this.loggedinCustomer = res;
+          this.login = true;
         },
-        err => console.error(err)
+        err => console.log(err)
       );
   }
+
+  }
+
+
 
 }

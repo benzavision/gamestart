@@ -10,15 +10,29 @@ export class GamesService {
 
   API_URI = 'http://localhost:3000/api';
 
+
+
   constructor(private http: HttpClient) { }
+
+
+  getGameNew(id: number) {
+    return this.http.get(`${this.API_URI}/games/${id}`);
+  }
 
   getGames() {
     return this.http.get(`${this.API_URI}/games`);
+  }
+  searchGames(word: string) {
+    return this.http.get(`${this.API_URI}/games/search/${word}`);
+  }
+  getGamesByGenre(genre: string) {
+    return this.http.get(`${this.API_URI}/games/g/${genre}`);
   }
 
   getGame(id: string) {
     return this.http.get(`${this.API_URI}/games/${id}`);
   }
+
 
   deleteGame(id: string) {
     return this.http.delete(`${this.API_URI}/games/${id}`);

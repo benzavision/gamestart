@@ -8,45 +8,47 @@
     <div class="row">
 
       <div class="col-3">
-        <h4>Spiel {{ edit ? 'Bearbeiten' : 'Hinzufügen' }}</h4>
-        <div class="input-group mb-3">
-          <input type="text" required="required" name="title" [(ngModel)]="game.title" class="form-control" placeholder="Name" aria-label="Name">
-        </div>
-        <div class="input-group mb-3">
-          <input type="text" required="required" name="maker" [(ngModel)]="game.maker" class="form-control" placeholder="Maker" aria-label="Maker">
-        </div>
 
-        <div class="input-group mb-3">
-          <input type="number" required="required" name="price" [(ngModel)]="game.price" class="form-control" placeholder="Preis">
-          <div class="input-group-append">
-            <span class="input-group-text">€</span>
+          <h4>Spiel {{ edit ? 'Bearbeiten' : 'Hinzufügen' }}</h4>
+          <div class="input-group mb-3">
+            <input type="text" required name="title" [(ngModel)]="game.title" class="form-control" placeholder="Name" aria-label="Name">
           </div>
-        </div>
 
-        <div class="input-group mb-3">
-          <input type="number" required="required" name="stock" [(ngModel)]="game.stock" class="form-control" placeholder="Bestand" aria-label="Bestand" >
-        </div>
+          <div class="input-group mb-3">
+            <input type="text" required name="maker" [(ngModel)]="game.maker" class="form-control" placeholder="Maker" aria-label="Maker">
+          </div>
 
-        <div class="input-group mb-3">
-          <select class="custom-select" id="inputConsole" [(ngModel)]="game.console">
-            <option selected >Konsole...</option>
-            <option  *ngFor="let console of consoles" >{{console.name | uppercase}}</option>
+          <div class="input-group mb-3">
+            <input type="number" required  min="1" name="price" [(ngModel)]="game.price" class="form-control" placeholder="Preis">
+            <div class="input-group-append">
+              <span class="input-group-text">€</span>
+            </div>
+          </div>
 
-          </select>
-        </div>
+          <div class="input-group mb-3">
+            <input type="number" required  min="1" name="stock" [(ngModel)]="game.stock" class="form-control" placeholder="Bestand" aria-label="Bestand" >
+          </div>
 
-        <div class="input-group mb-3">
-          <select class="custom-select" id="inputCategorie" [(ngModel)]="game.genre">
-            <option selected >Kategorie...</option>
-            <option  *ngFor="let categorie of categories" >{{categorie.name | titlecase}}</option>
-          </select>
-        </div>
+          <div class="input-group mb-3">
+            <select class="custom-select" required id="inputConsole" [(ngModel)]="game.console">
+              <option selected >Konsole...</option>
+              <option  *ngFor="let console of consoles" >{{console.name | uppercase}}</option>
 
-        <div class="input-group mb-3">
-          <input type="text" name="image" [(ngModel)]="game.image" class="form-control" placeholder="Bild URL"  aria-label="bild" >
-        </div>
-        <button type="button" class="btn btn-primary mr-2 btn-block btn-lg" (click)="edit ? updateGame() : saveNewGame()">{{ edit ? 'Speichern' : 'Hinzufügen' }}</button>
+            </select>
+          </div>
 
+          <div class="input-group mb-3">
+            <select class="custom-select" required id="inputCategorie" [(ngModel)]="game.genre">
+              <option selected >Kategorie...</option>
+              <option  *ngFor="let categorie of categories" >{{categorie.name | titlecase}}</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text" required name="image" [(ngModel)]="game.image" class="form-control" placeholder="Bild URL"  aria-label="bild" >
+          </div>
+          <button type="submit" class="btn btn-primary mr-2 btn-block btn-lg" [disabled]=" game.title.length == 0 || game.price <= 0 ||  game.stock<=0 " (click)="edit ? updateGame() : saveNewGame()">{{ edit ? 'Speichern' : 'Hinzufügen' }}</button>
+        <label *ngIf="game.title.length == 0 || game.price <= 0 ||  game.stock<=0 "> Complete Form !</label>
       </div>
 
 

@@ -18,6 +18,7 @@
           <th scope="col">ID</th>
           <th scope="col">Name</th>
           <th scope="col">Konsole</th>
+          <th scope="col">Genre</th>
           <th scope="col">Alter Preis</th>
           <th scope="col">Neuer Preis</th>
           <th scope="col">Bestand</th>
@@ -29,6 +30,7 @@
           <th scope="row">{{game.id}}</th>
           <td>{{game.title | uppercase}}</td>
           <td>{{game.console | uppercase }}</td>
+          <td>{{game.genre | titlecase }}</td>
           <td>{{game.old_price}}</td>
           <td>{{game.price}}</td>
           <td>{{game.stock}}</td>

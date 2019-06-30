@@ -3,14 +3,31 @@ var express = require ('express'),
     bodyparser = require ('body-parser'),
     cors =  = require('cors');
 
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
 
 
+var routes = require('./routes/index');
+var users = require('./routes/users');
+var clear = require('./routes/clear');
+var checkout = require('./routes/checkout');
 
 
 // Initializations.
 var app = express();
 
+
+
+
+app.use('/', routes);
+app.use('/users', users);
+app.use('/checkout', checkout);
+app.use('/clear', clear);
+
+
 app.use(cors());
+app.use(logger('dev'));
+app.use(cookieParser());
 
 app.use(session({
     secret: 'secret',

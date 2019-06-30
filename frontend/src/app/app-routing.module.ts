@@ -9,6 +9,10 @@ import { ManagerHomeComponent} from './manager-home/manager-home.component';
 import { ManagerCustomerComponent} from './manager-customer/manager-customer.component';
 import { ManagerGamesComponent } from './manager-games/manager-games.component';
 import { ManagerAddGameComponent} from './manager-add-game/manager-add-game.component';
+import { CategorieListComponent} from './categorie-list/categorie-list.component';
+import { ProfileComponent} from './profile/profile.component';
+import {SearchListComponent} from './search-list/search-list.component';
+import {AdminLoginComponent} from './authentication/admin-login/admin-login.component';
 
 
 const routes: Routes = [
@@ -32,6 +36,14 @@ const routes: Routes = [
   {path: 'games/add', component:ManagerAddGameComponent},
   { path:'', redirectTo: 'games/edit/:id', pathMatch:'full'},
   {path: 'games/edit/:id', component:ManagerAddGameComponent},
+  { path:'', redirectTo: 'category/:genre', pathMatch:'full'},
+  {path: 'category/:genre', component:CategorieListComponent},
+  { path:'', redirectTo: 'profile', pathMatch:'full'},
+  {path: 'profile', component:ProfileComponent},
+  { path:'', redirectTo: 'search/:word', pathMatch:'full'},
+  {path: 'search/:word', component:SearchListComponent},
+  { path:'', redirectTo: 'auth/admin-login', pathMatch:'full'},
+  {path: 'auth/admin-login', component:AdminLoginComponent},
 
 ];
 

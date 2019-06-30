@@ -71,7 +71,51 @@ var GamesController = /** @class */ (function () {
                             return [2 /*return*/, res.json(games[0])];
                         }
                         else {
-                            res.status(404).json({ text: "The games doesn't exits" });
+                            res.status(404).json({ text: "Spiel nicht gefunden" });
+                        }
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    GamesController.prototype.search = function (req, res) {
+        return __awaiter(this, void 0, void 0, function () {
+            var word, games;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        word = req.params.word;
+                        return [4 /*yield*/, database_1.default.query('SELECT * FROM games WHERE title LIKE ?', '%' + word + '%')];
+                    case 1:
+                        games = _a.sent();
+                        console.log(games.length);
+                        if (games.length > 0) {
+                            return [2 /*return*/, res.json(games)];
+                        }
+                        else {
+                            res.status(404).json({ text: "kein Spiel nicht gefunden" });
+                        }
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    GamesController.prototype.getGenre = function (req, res) {
+        return __awaiter(this, void 0, void 0, function () {
+            var genre, games;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        genre = req.params.genre;
+                        return [4 /*yield*/, database_1.default.query('SELECT * FROM games WHERE genre = ?', [genre])];
+                    case 1:
+                        games = _a.sent();
+                        console.log(games.length);
+                        if (games.length > 0) {
+                            return [2 /*return*/, res.json(games)];
+                        }
+                        else {
+                            res.status(404).json({ text: "Kategorie nicht gefunden" });
                         }
                         return [2 /*return*/];
                 }
@@ -100,10 +144,10 @@ var GamesController = /** @class */ (function () {
                     case 0:
                         id = req.params.id;
                         oldGame = req.body;
-                        return [4 /*yield*/, database_1.default.query('UPDATE games set ? WHERE id = ?', [req.body, id])];
+                        return [4 /*yield*/, database_1.default.query('UPDATE games set ? WHERE id = ?', [oldGame, id])];
                     case 1:
                         _a.sent();
-                        res.json({ message: "The game was Updated" });
+                        res.json({ message: "Spiel aktualisiert" });
                         return [2 /*return*/];
                 }
             });
@@ -119,7 +163,7 @@ var GamesController = /** @class */ (function () {
                         return [4 /*yield*/, database_1.default.query('DELETE FROM games WHERE id = ?', [id])];
                     case 1:
                         _a.sent();
-                        res.json({ message: "The game was deleted" });
+                        res.json({ message: "Spiel gelöscht" });
                         return [2 /*return*/];
                 }
             });

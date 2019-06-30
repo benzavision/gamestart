@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div *ngFor="let game of games  " class="col-md-4">
+    <div *ngFor="let game of games  " class="col-md-3">
       <figure class="card card-product">
         <div class="img-wrap"><img  [src]="game.image"></div>
         <figcaption class="info-wrap">
@@ -13,10 +13,9 @@
           </div> <!-- rating-wrap.// -->
         </figcaption>
         <div class="bottom-wrap">
-          <a class="btn btn-sm btn-primary float-right ml-3">Kaufen</a>
-          <a href="" class="btn btn-sm btn-secondary float-right">Mieten</a>
+          <a class="btn btn-sm btn-primary float-right ml-3" style="color: #fff" (click)="gameInCart(game.id, game.price, game.title)">Kaufen</a>
           <div class="price-wrap h5">
-            <span class="price-new">{{game.price}} €</span> <del *ngIf="game.old_price > 0"  class="price-old">{{game.old_price}} €</del>
+            <span class="price-new">{{game.price}} €</span> <del *ngIf="game.old_price > 0 || game.price <= game.old_price"  class="price-old">{{game.old_price}} €</del>
           </div> <!-- price-wrap.// -->
         </div> <!-- bottom-wrap.// -->
       </figure>

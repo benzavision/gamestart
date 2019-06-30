@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {AuthenticationService} from './authentication/authentication.service';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +6,7 @@ import {AuthenticationService} from './authentication/authentication.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(public auth: AuthenticationService){}
+  constructor(){}
 
   title = 'GameStart';
 }

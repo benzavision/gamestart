@@ -6,6 +6,7 @@ import { Console} from '../models/Console';
 import { Router, ActivatedRoute } from '@angular/router';
 import { GamesService} from '../services/games.service';
 import { Game} from '../models/Game';
+import {AdminService} from '../services/admin.service';
 
 @Component({
   selector: 'app-manager-add-game',
@@ -38,11 +39,13 @@ export class ManagerAddGameComponent implements OnInit {
               private gameService: GamesService,
               private consolesService: ConsolesService,
               private router: Router,
-              private activatedRoute: ActivatedRoute, ) { }
+              private activatedRoute: ActivatedRoute,
+              private adminService: AdminService) { }
 
   ngOnInit() {
     this.getCategories();
     this.getConsoles();
+    this.checkLogin();
 
 
     const params = this.activatedRoute.snapshot.params;
@@ -57,6 +60,13 @@ export class ManagerAddGameComponent implements OnInit {
           },
           err => console.log(err)
         );
+    }
+
+  }
+
+  checkLogin(){
+    if (!this.adminService.getLoginId()) {
+      this.router.navigate(['/auth/admin-login'], );
     }
 
   }

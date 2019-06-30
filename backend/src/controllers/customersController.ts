@@ -3,6 +3,7 @@ import {Request, Response } from 'express';
 import pool from '../database';
 
 
+
 class CustomersController {
 
 
@@ -12,25 +13,37 @@ class CustomersController {
         res.json(customers);
     }
 
+    public async getOne(req: Request, res: Response): Promise<any> {
+        const { id } = req.params;
+        const customers = await pool.query('SELECT * FROM customers WHERE id = ?', [id]);
+        console.log(customers.length);
+        if (customers.length > 0) {
+            return res.json(customers[0]);
+        } else {
+            res.status(404).json({ text: "Kunde nicht gefunden" });
+
+        }
+    }
 
 
-
-    public async login(req: Request, res: Response) {
-        var {email} = req.body.email;
-        var {password}  = req.body.password;
+    public async login(req: Request, res: Response): Promise<any>  {
+        var {email} = req.params;
+        var {password}  = req.params;
 
         if (email && password) {
 
             const customers = await pool.query('SELECT * FROM customers WHERE email = ? AND password = ?', [email, password]);
 
             if (customers.length > 0) {
+
                 res.json(customers[0]);
-                res.json({ message: 'Logged in!' });
+
+
             } else {
-                res.json({ message: 'Incorrect Username and/or Password!' });
+                res.json({ message: 'Passwort oder Email nicht korrekt!' });
             }
         } else {
-            res.json({ message: 'Please enter Username and Password!' });
+            res.json({ message: 'bitter Passwort und Email eingeben!' });
         }
     }
 
@@ -45,13 +58,13 @@ class CustomersController {
         const { id } = req.params;
         const oldCustomer = req.body;
         await pool.query('UPDATE customers set ? WHERE id = ?', [req.body, id]);
-        res.json({ message: " customers Updated" });
+        res.json({ message: " Kundendaten aktuakisiert" });
     }
 
     public async delete(req: Request, res: Response): Promise<void> {
         const { id } = req.params;
         await pool.query('DELETE FROM customers WHERE id = ?', [id]);
-        res.json({ message: "customer deleted" });
+        res.json({ message: "Kunde gelöscht" });
     }
 }
 

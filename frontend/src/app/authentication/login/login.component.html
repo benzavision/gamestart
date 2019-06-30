@@ -1,10 +1,20 @@
-<body>
-<div class="login-form">
-  <h1>Login Form</h1>
-  <form action="/auth" method="POST">
-    <input type="text" name="email" placeholder="email" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <input type="submit">
-  </form>
+<body class="text-center">
+<div class="form-signin">
+  <h2 routerLink="/home">{{ title }}</h2>
+  <h1 class="h3 mt-5 mb-3 font-weight-normal">Login</h1>
+
+  <label class="sr-only">Email addresse</label>
+  <input type="email" name="email" class="form-control" placeholder="Email addresse" required autofocus [(ngModel)]="customer.email">
+  <label class="sr-only">Password</label>
+  <input type="password" name="password" class="form-control" placeholder="Password" required [(ngModel)]="customer.password">
+
+  <button class="btn btn-lg btn-primary btn-block mt-3 mb-3" type="submit"
+          (click)="login()">Login
+  </button>
+
+  <div class="alert-box">{{ msg }}</div>
+
+  <a routerLink="/register" routerLinkActive="active" class="">Register</a>
+  <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
 </div>
 </body>

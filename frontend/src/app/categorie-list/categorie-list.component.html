@@ -1,0 +1,35 @@
+<app-header></app-header>
+
+
+<section class="section-content padding-y bg">
+
+
+  <div class="container">
+    <h4 class="title mb-3">Categorie: {{category}} ({{games.length}}) </h4>
+    <p *ngIf="games.length  == 0">Die Liste ist leer - <a routerLink="/home">Startseite</a></p>
+    <div class="row">
+      <div *ngFor="let game of games  " class="col-md-4">
+        <figure class="card card-product">
+          <div class="img-wrap"><img  [src]="game.image"></div>
+          <figcaption class="info-wrap">
+            <h4 class="title"> {{game.title | uppercase}}</h4>
+            <h5 class="desc">{{game.console | uppercase }}</h5>
+            <p class="desc">{{game.maker}}</p>
+            <div class="rating-wrap">
+
+              <div class="label-rating">Release Datum: {{game.created_at | date: 'yyyy-MM-dd'}}</div>
+            </div> <!-- rating-wrap.// -->
+          </figcaption>
+          <div class="bottom-wrap">
+            <a class="btn btn-sm btn-primary float-right ml-3" style="color: #ffffff" (click)="gameInCart(game.id, game.price, game.title)">Kaufen</a>
+            <div class="price-wrap h5">
+              <span class="price-new">{{game.price}} €</span> <del *ngIf="game.old_price > 0"  class="price-old">{{game.old_price}} €</del>
+            </div> <!-- price-wrap.// -->
+          </div> <!-- bottom-wrap.// -->
+        </figure>
+      </div>
+    </div>
+  </div>
+
+</section>
+<app-footer></app-footer>

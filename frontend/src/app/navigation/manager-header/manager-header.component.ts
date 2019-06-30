@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ConsolesService} from '../../services/consoles.service';
-import { Console} from '../../models/Console';
+import {AdminService} from '../../services/admin.service';
+import {Customer} from '../../models/Customer';
+import {Admin} from '../../models/Admin';
 
 @Component({
   selector: 'app-manager-header',
@@ -9,20 +10,46 @@ import { Console} from '../../models/Console';
 })
 export class ManagerHeaderComponent implements OnInit {
 
-  constructor(private consolesService : ConsolesService,) { }
+  constructor(private adminServices : AdminService) { }
   title = 'GameStart';
-  consoles: any = [];
+  word: string;
+  login: boolean;
+
+  loggedinAdmin: Admin = {
+    name : ''};
+
+
   ngOnInit() {
-    this.getConsoles();
+    this.getLoggedin();
   }
 
-  getConsoles() {
-    this.consolesService.getConsoles()
-      .subscribe(
-        res => {
-          this.consoles = res;
-        },
-        err => console.error(err)
-      );
+
+  logout(){
+    this.adminServices.logout();
+    window.location.reload();
+    this.login = false;
   }
+
+  getLoggedin(){
+    if (localStorage.getItem('loginAdmin')){
+      this.login = true;
+
+      console.log(this.adminServices.getLoginId() );
+
+
+      this.adminServices.getLogin()
+        .subscribe(
+          res => {
+
+            console.log(res);
+            this.loggedinAdmin = res;
+            this.login = true;
+          },
+          err => console.log(err)
+        );
+      console.log(this.loggedinAdmin.name );
+    }
+
+  }
+
 }

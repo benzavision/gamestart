@@ -11,6 +11,7 @@ var gamesRoutes_1 = __importDefault(require("./routes/gamesRoutes"));
 var customersRoutes_1 = __importDefault(require("./routes/customersRoutes"));
 var categoriesRoutes_1 = __importDefault(require("./routes/categoriesRoutes"));
 var consolesRoutes_1 = __importDefault(require("./routes/consolesRoutes"));
+var adminsRoutes_1 = __importDefault(require("./routes/adminsRoutes"));
 var Server = /** @class */ (function () {
     function Server() {
         this.app = express_1.default();
@@ -27,6 +28,7 @@ var Server = /** @class */ (function () {
     Server.prototype.routes = function () {
         this.app.use('/', indexRoutes_1.default);
         this.app.use('/api/games', gamesRoutes_1.default);
+        this.app.use('/api/admin', adminsRoutes_1.default);
         this.app.use('/api/customers', customersRoutes_1.default);
         this.app.use('/api/categories', categoriesRoutes_1.default);
         this.app.use('/api/consoles', consolesRoutes_1.default);

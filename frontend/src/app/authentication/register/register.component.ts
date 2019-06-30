@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomersService } from 'src/app/services/customers.service';
-import { AuthenticationService, TokenPayload } from "../authentication.service";
-import { Customer} from '../../models/Customer';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,18 +8,10 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor(private router: Router,private auth: AuthenticationService) { }
+  constructor(private router: Router ) { }
   title = 'GameStart';
 
-  credentials: TokenPayload = {
-    id: 0,
-    name: "",
-    last_name: "",
-    email: "",
-    avatar: "",
-    password: "",
-    credit: 0
-  };
+
 
   ngOnInit() {}
 

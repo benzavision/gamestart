@@ -3,7 +3,8 @@
     <i class="icon-menu"></i> Genre
   </header>
   <ul class="menu-category">
-    <li *ngFor="let categorie of categories"  > <a href="#">{{categorie.name | titlecase}}</a></li>
+    <li *ngFor="let categorie of categories"  > <a [routerLink]="['/category/', categorie.name]">{{categorie.name | titlecase}}</a></li>
+
 
 
   </ul>

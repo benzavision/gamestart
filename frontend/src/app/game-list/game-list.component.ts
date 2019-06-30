@@ -2,6 +2,8 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 
 import { GamesService } from 'src/app/services/games.service';
 import { Game } from 'src/app/models/Game';
+import {Item} from '../models/Item';
+import {ShoppingService} from '../services/shopping.service';
 
 
 
@@ -17,7 +19,8 @@ export class GameListComponent implements OnInit {
 
   games: any = [];
 
-  constructor(private gameService: GamesService, ) {}
+  constructor(private gameService: GamesService,
+              private shoppingService: ShoppingService,) {}
 
   ngOnInit() {
     this.getGames();
@@ -33,12 +36,13 @@ export class GameListComponent implements OnInit {
       );
   }
 
+  gameInCart( id: number, price:number, name:string){
+
+      this.shoppingService.saveGameInCart(id, price, name);
 
 
-  public popoverTitle: string = 'Popover title';
-  public popoverMessage: string = 'Popover description';
-  public confirmClicked: boolean = false;
-  public cancelClicked: boolean = false;
+  }
+
 
 
 }

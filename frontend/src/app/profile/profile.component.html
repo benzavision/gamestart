@@ -1,0 +1,35 @@
+<app-header></app-header>
+
+
+<section class="section-content padding-y bg">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="img-wrap"><img  [src]="customer.avatar" alt="Kein Bild"></div>
+      </div>
+      <div class="col-3">
+
+        <h4>Profile {{customer.name + ' ' +  customer.last_name | titlecase}}</h4>
+        <div class="input-group mb-3">
+          <input type="text" required name="name" [(ngModel)]="customer.name" class="form-control" placeholder="Vorname" aria-label="Vorname">
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" required name="lastname" [(ngModel)]="customer.last_name" class="form-control" placeholder="Nachname" aria-label="Nachname">
+        </div>
+        <div class="input-group mb-3">
+          <input type="email" required name="lastname" [(ngModel)]="customer.email" class="form-control" placeholder="E-Mail" aria-label="E-Mail">
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" required name="image" [(ngModel)]="customer.avatar" class="form-control" placeholder="Bild URL"  aria-label="bild" >
+        </div>
+        <button type="submit" class="btn btn-primary mr-2 btn-block btn-lg" [disabled]=" customer.name == '' || customer.last_name == ''  ||  customer.email == '' ||  customer.avatar == '' " (click)="updateCustomer()">Speichern</button>
+        <div class="alert alert-warning mt-3" role="alert" *ngIf="customer.name == '' || customer.last_name == ''  ||  customer.email == '' ||  customer.avatar == '' "> Complete Form !</div>
+        <div *ngIf="msg !== ''" class="alert alert-primary mt-3" role="alert">{{msg}}</div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+<app-footer></app-footer>
