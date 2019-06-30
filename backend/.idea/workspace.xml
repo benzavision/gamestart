@@ -2,62 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fdd8a52-7594-4e9a-a94d-e0fcf35a8eb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/adminsController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/adminsRoutes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/models/Admin.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/models/Item.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/controllers/gamesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/controllers/gamesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/routes/gamesRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/routes/gamesRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/customersController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/customersController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/gamesController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/gamesController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/customersRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/customersRoutes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/gamesRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/gamesRoutes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/alert/alert.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/alert/alert.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/alert/alert.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/alert/alert.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/auth-guard.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/auth-guard.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/authentication.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/authentication.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/authentication/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/authentication/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/authentication/register/register.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/authentication/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/authentication/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/game-list/game-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/game-list/game-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/game-list/game-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/game-list/game-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/main/categories/categories.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/main/categories/categories.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/main/main.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/main/slider/slider.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/main/slider/slider.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/manager-add-game/manager-add-game.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/manager-add-game/manager-add-game.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/manager-add-game/manager-add-game.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/manager-add-game/manager-add-game.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/manager-customer-list/manager-customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/manager-customer-list/manager-customer-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/manager-games/manager-games.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/manager-games/manager-games.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/manager-home/manager-home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/manager-home/manager-home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/navigation/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/navigation/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/navigation/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/navigation/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/navigation/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/navigation/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/navigation/manager-header/manager-header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/navigation/manager-header/manager-header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/navigation/manager-header/manager-header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/navigation/manager-header/manager-header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/alert.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/alert.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/authentication.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/authentication.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/customers.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/services/customers.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/services/games.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/services/games.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/user-home/user-home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/user-home/user-home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/user-shopping-cart/user-shopping-cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/user-shopping-cart/user-shopping-cart.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/user-shopping-cart/user-shopping-cart.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/user-shopping-cart/user-shopping-cart.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/assets/css/ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/assets/css/ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/profile/profile.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,11 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/keys.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="31" />
+            <state relative-caret-position="105">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +43,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="214">
               <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-110">
+              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -154,9 +133,9 @@
         <option value="$PROJECT_DIR$/src/routes/gamesRoutes.ts" />
         <option value="$PROJECT_DIR$/src/routes/adminsRoutes.ts" />
         <option value="$PROJECT_DIR$/src/index.ts" />
-        <option value="$PROJECT_DIR$/src/controllers/customersController.ts" />
         <option value="$PROJECT_DIR$/src/controllers/adminsController.ts" />
         <option value="$PROJECT_DIR$/src/controllers/gamesController.ts" />
+        <option value="$PROJECT_DIR$/src/controllers/customersController.ts" />
       </list>
     </option>
   </component>
@@ -255,12 +234,12 @@
       <workItem from="1561541525869" duration="145000" />
       <workItem from="1561541892175" duration="6556000" />
       <workItem from="1561629894161" duration="2114000" />
-      <workItem from="1561709167622" duration="5074000" />
+      <workItem from="1561709167622" duration="6359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58068000" />
+    <option name="totallyTimeSpent" value="59353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -385,24 +364,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/Pool.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="198" column="22" selection-start-line="198" selection-start-column="22" selection-end-line="198" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -436,16 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="36" column="57" lean-forward="true" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/indexController.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -459,16 +414,6 @@
           <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/customersController.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -500,13 +445,6 @@
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -552,8 +490,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/keys.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="31" />
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/customersController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>

@@ -30,7 +30,6 @@ export class ProfileComponent implements OnInit {
     ) { }
 
   ngOnInit() {
-    console.log(this.msg);
     this.checkLogin();
 
     const params = this.activatedRoute.snapshot.params;

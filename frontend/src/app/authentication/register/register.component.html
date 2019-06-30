@@ -1,25 +1,21 @@
 <body class="text-center">
-<form class="form-signin" (submit)="register()">
+<div class="form-signin">
   <h2 routerLink="/home">{{ title }}</h2>
   <h1 class="h3 mt-5 mb-3 font-weight-normal">Registrieren</h1>
   <label id="name" class="sr-only">Vorname</label>
-  <input type="text" name="name" class="form-control" placeholder="Vorname" required autofocus [(ngModel)]="credentials.name">
+  <input type="text" name="name" class="form-control" placeholder="Vorname" required autofocus [(ngModel)]="customer.name">
   <label id="last_name" class="sr-only">Name</label>
-  <input type="text" name="last_name" class="form-control" placeholder="Name"  autofocus [(ngModel)]="credentials.last_name">
+  <input type="text" name="last_name" class="form-control" placeholder="Name"  autofocus [(ngModel)]="customer.last_name">
   <label id="email" class="sr-only">Email addresse</label>
-  <input type="email" name="email" class="form-control" placeholder="Email addresse" required autofocus [(ngModel)]="credentials.email">
+  <input type="email" name="email" class="form-control" placeholder="Email addresse" required autofocus [(ngModel)]="customer.email">
   <label id="password" class="sr-only">Password</label>
-  <input type="password" name="password" class="form-control" placeholder="Password" required [(ngModel)]="credentials.password">
-  <label id="street" class="sr-only">Straße</label>
-  <input type="text" name="street" class="form-control mt-3" placeholder="Straße"  autofocus [(ngModel)]="credentials.street">
-  <label id="city" class="sr-only">Stadt</label>
-  <input type="text" name="city" class="form-control mt-3" placeholder="Stadt"  autofocus [(ngModel)]="credentials.city">
-  <label id="plz" class="sr-only">PLZ</label>
-  <input type="number" name="plz" class="form-control" placeholder="PLZ"  autofocus [(ngModel)]="credentials.plz">
+  <input type="password" name="password" class="form-control" placeholder="Password" required [(ngModel)]="customer.password">
 
-  <button class="btn btn-lg btn-primary btn-block mt-3 mb-3" type="submit">Registrieren</button>
+  <button [disabled]=" customer.name =='' ||  customer.last_name =='' ||  customer.email =='' || customer.password ==''"  class="btn btn-lg btn-primary btn-block mt-3 mb-3" (click)="register()" >Registrieren</button>
+  <div class="alert-box">{{ msg }}</div>
+
   <a routerLink="/login" routerLinkActive="active"  class="">Login</a>
   <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
-</form>
+</div>
 
 </body>

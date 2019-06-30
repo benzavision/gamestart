@@ -50,7 +50,7 @@ class CustomersController {
 
 
     public async create(req: Request, res: Response): Promise<void> {
-        const result = await pool.query('INSERT INTO customers set ?', [req.body]);
+        const result = await pool.query('INSERT INTO customers set ? ', [req.body]);
         res.json({ message: 'customer registred' });
     }
 
