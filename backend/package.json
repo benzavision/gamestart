@@ -26,7 +26,7 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "promise-mysql": "^3.3.1",
-    "sequelize": "^5.8.11",
+    "sequelize": "^5.15.1",
     "timeago.js": "^4.0.0-beta.2"
   },
   "devDependencies": {
